@@ -1,5 +1,7 @@
-[gd_scene format=3 uid="uid://dkbsvvars7td8"]
+[gd_scene format=3 uid="uid://byplk1cohdujx"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
