@@ -1,7 +1,25 @@
-[gd_scene format=3 uid="uid://byplk1cohdujx"]
+[gd_scene load_steps=3 format=3 uid="uid://dkbsvvars7td8"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="Script" path="res://node_2d.gd" id="1_fk1mt"]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[sub_resource type="Theme" id="Theme_dnrj7"]
 
-[node name="Timer" type="Timer" parent="."]
+[node name="main" type="Node2D"]
+script = ExtResource("1_fk1mt")
+
+[node name="START" type="Button" parent="."]
+offset_left = 498.0
+offset_top = 84.0
+offset_right = 694.0
+offset_bottom = 175.0
+theme = SubResource("Theme_dnrj7")
+text = "START"
+
+[node name="QUIT" type="Button" parent="."]
+offset_left = 494.0
+offset_top = 264.0
+offset_right = 690.0
+offset_bottom = 355.0
+text = "QUIT"
+
+[connection signal="pressed" from="QUIT" to="." method="_on_quit_pressed"]
