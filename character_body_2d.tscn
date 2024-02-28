@@ -93,6 +93,8 @@ radius = 7.0
 height = 20.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+texture_filter = 1
+scale = Vector2(4, 4)
 script = ExtResource("1_4228p")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
