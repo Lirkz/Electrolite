@@ -6,20 +6,32 @@
 [node name="Menu" type="Node2D"]
 
 [node name="START" type="Button" parent="."]
-offset_left = 481.0
-offset_top = 224.0
-offset_right = 599.0
-offset_bottom = 294.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 241.0
+offset_bottom = 145.0
 text = "START"
 script = ExtResource("1_e5hoc")
 
 [node name="QUIT" type="Button" parent="."]
-offset_left = 481.0
-offset_top = 306.0
-offset_right = 599.0
-offset_bottom = 376.0
+offset_top = 292.0
+offset_right = 241.0
+offset_bottom = 437.0
 text = "Quit"
 script = ExtResource("2_lyqe1")
+
+[node name="Button" type="Button" parent="."]
+offset_top = 146.0
+offset_right = 241.0
+offset_bottom = 291.0
+text = "SETTINGS"
+
+[node name="LinkButton" type="LinkButton" parent="."]
+offset_top = 439.0
+offset_right = 241.0
+offset_bottom = 462.0
+text = "Other games"
+uri = "https://www.youtube.com/watch?v=BZpYIXUiQCA"
 
 [connection signal="pressed" from="START" to="START" method="_on_pressed"]
 [connection signal="pressed" from="QUIT" to="QUIT" method="_on_pressed"]

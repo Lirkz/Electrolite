@@ -365,3 +365,5 @@ animation = &"run"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)
 shape = SubResource("CapsuleShape2D_bfapu")
+
+[node name="Camera2D" type="Camera2D" parent="."]
