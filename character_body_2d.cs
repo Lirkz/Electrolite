@@ -53,13 +53,6 @@ public partial class character_body_2d : CharacterBody2D
 			sprite.FlipH = true;
 		}
 		//animation
-		if (velocity.X == 0 && velocity.Y == 0)
-		{
-			if (sprite.Animation != "defualt")
-			{
-				sprite.Play("default");
-			}
-		}
 		
 	}
 }
