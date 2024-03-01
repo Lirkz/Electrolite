@@ -31,7 +31,7 @@ offset_top = 439.0
 offset_right = 241.0
 offset_bottom = 462.0
 text = "Other games"
-uri = "https://www.youtube.com/watch?v=BZpYIXUiQCA"
+uri = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 
 [connection signal="pressed" from="START" to="START" method="_on_pressed"]
 [connection signal="pressed" from="QUIT" to="QUIT" method="_on_pressed"]

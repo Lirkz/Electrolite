@@ -1,7 +1,7 @@
 [gd_scene load_steps=54 format=3 uid="uid://dld3udu2sipxa"]
 
-[ext_resource type="Script" path="res://character_body_2d.cs" id="1_4228p"]
 [ext_resource type="Texture2D" uid="uid://bomovn0xf58ur" path="res://Assets/Main Characters/Ninja Frog/Idle (32x32).png" id="1_b8qh1"]
+[ext_resource type="Script" path="res://character_body_2d.cs" id="1_ucniq"]
 [ext_resource type="Texture2D" uid="uid://pn7x5rbrmy4q" path="res://Assets/Main Characters/Ninja Frog/Double Jump (32x32).png" id="3_ouse2"]
 [ext_resource type="Texture2D" uid="uid://5xxxfpyihp5e" path="res://Assets/Main Characters/Ninja Frog/Fall (32x32).png" id="4_tp8ga"]
 [ext_resource type="Texture2D" uid="uid://fpr32rreydqn" path="res://Assets/Main Characters/Ninja Frog/Hit (32x32).png" id="5_7slio"]
@@ -219,7 +219,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -276,7 +276,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"hit",
-"speed": 5.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -284,7 +284,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"jump",
-"speed": 5.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -325,7 +325,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run",
-"speed": 5.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -356,12 +356,13 @@ height = 13.0
 texture_filter = 1
 position = Vector2(646, 387)
 scale = Vector2(4, 4)
-script = ExtResource("1_4228p")
+script = ExtResource("1_ucniq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(4.29153e-06, 2.25)
 scale = Vector2(0.597657, 0.605469)
 sprite_frames = SubResource("SpriteFrames_670qu")
+animation = &"run"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.25, 4.5)

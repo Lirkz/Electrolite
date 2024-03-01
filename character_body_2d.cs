@@ -3,8 +3,8 @@ using System;
 
 public partial class character_body_2d : CharacterBody2D
 {
-	public const float Speed = 400.0f;
-	public const float JumpVelocity = -450.0f;
+	public const float Speed = 425.0f;
+	public const float JumpVelocity = -550.0f;
 	private AnimatedSprite2D sprite;
 	public bool isLeft;
 	
@@ -21,9 +21,22 @@ public partial class character_body_2d : CharacterBody2D
 
 		// Add the gravity.
 		if (!IsOnFloor())
+		{
 			velocity.Y += gravity * (float)delta;
+			if (velocity.Y > 0)
+		{
 			sprite.Play("fall");
-
+		}
+		else if (velocity.Y < 0)
+		{
+			sprite.Play("jump");
+		}
+			}
+			else if (!Input.IsKeyPressed(Key.A) && !Input.IsKeyPressed(Key.D)){
+				sprite.Play("default");
+			} else {
+				sprite.Play("run");
+			}
 		// Handle Jump.
 		if (Input.IsActionJustPressed("jump") && IsOnFloor())
 			velocity.Y = JumpVelocity;
