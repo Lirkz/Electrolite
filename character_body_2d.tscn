@@ -349,8 +349,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bfapu"]
-radius = 7.25
-height = 15.5
+radius = 4.5
+height = 13.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 texture_filter = 1
@@ -362,10 +362,9 @@ script = ExtResource("1_4228p")
 position = Vector2(4.29153e-06, 2.25)
 scale = Vector2(0.597657, 0.605469)
 sprite_frames = SubResource("SpriteFrames_670qu")
-animation = &"wall jump"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.25, 3.25)
+position = Vector2(0.25, 4.5)
 shape = SubResource("CapsuleShape2D_bfapu")
 
 [node name="Camera2D" type="Camera2D" parent="."]
