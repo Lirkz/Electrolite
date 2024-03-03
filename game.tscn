@@ -591,21 +591,6 @@ sources/0 = SubResource("TileSetAtlasSource_stn0a")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7vo5e"]
 size = Vector2(1154, 128)
 
-[sub_resource type="Animation" id="Animation_qh7pb"]
-resource_name = "text"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Label:visible_ratio")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-
 [sub_resource type="Animation" id="Animation_abyr1"]
 length = 0.001
 tracks/0/type = "value"
@@ -619,6 +604,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_qh7pb"]
+resource_name = "text"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_t0m7s"]
@@ -662,7 +662,7 @@ offset_left = 312.0
 offset_top = 265.0
 offset_right = 841.0
 offset_bottom = 368.0
-text = "Fuck You Bitch"
+text = "YOU POOPY HEAD"
 label_settings = SubResource("LabelSettings_6vwbp")
 visible_characters = 0
 visible_ratio = 0.0
