@@ -242,7 +242,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"double jump",
-"speed": 5.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -364,7 +364,7 @@ script = ExtResource("1_ucniq")
 position = Vector2(4.29153e-06, 2.25)
 scale = Vector2(0.597657, 0.605469)
 sprite_frames = SubResource("SpriteFrames_670qu")
-animation = &"fall"
+animation = &"double jump"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.25, 4.5)
