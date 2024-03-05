@@ -1,6 +1,6 @@
 using Godot;
 using System;
-
+// very important semicolon please ignore ;
 public partial class character_body_2d : CharacterBody2D
 {
 	public const float Speed = 425.0f;
