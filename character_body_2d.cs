@@ -1,6 +1,7 @@
 using Godot;
 using System;
 // very important semicolon please ignore ;
+//I have no fucking idea who put this here, but when I deleted it the game wouldn’t start. Words cannot describe my fucking confusion. 
 public partial class character_body_2d : CharacterBody2D
 {
 	public const float Speed = 425.0f;
