@@ -242,7 +242,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"double jump",
-"speed": 15.0
+"speed": 30.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -349,14 +349,15 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bfapu"]
-radius = 4.5
-height = 13.0
+radius = 6.25
+height = 15.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 texture_filter = 1
 position = Vector2(646, 387)
 scale = Vector2(4, 4)
 script = ExtResource("1_ucniq")
+metadata/hiding = false
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -364,8 +365,8 @@ script = ExtResource("1_ucniq")
 position = Vector2(4.29153e-06, 2.25)
 scale = Vector2(0.597657, 0.605469)
 sprite_frames = SubResource("SpriteFrames_670qu")
-animation = &"double jump"
+animation = &"run"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.25, 4.5)
+position = Vector2(0, 4)
 shape = SubResource("CapsuleShape2D_bfapu")

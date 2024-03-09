@@ -30,7 +30,7 @@ public partial class character_body_2d : CharacterBody2D
 		{
 			doubleJump = true;
 		}
-		// animation
+		 //animation
 		if (velocity.Y > 0)
 		{
 			sprite.Play("fall");

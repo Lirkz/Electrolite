@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://chhaj6aekno8t"]
 
-[ext_resource type="Script" path="res://START.gd" id="1_e5hoc"]
+[ext_resource type="Script" path="res://GoToLvl.gd" id="1_plmtr"]
 [ext_resource type="Script" path="res://QUIT.gd" id="2_lyqe1"]
 [ext_resource type="Script" path="res://SETTINGS.gd" id="3_w001k"]
 
@@ -11,8 +11,8 @@ offset_left = 1.0
 offset_top = 1.0
 offset_right = 241.0
 offset_bottom = 145.0
-text = "START"
-script = ExtResource("1_e5hoc")
+text = "PLAY"
+script = ExtResource("1_plmtr")
 
 [node name="SETTINGS" type="Button" parent="."]
 offset_top = 146.0
