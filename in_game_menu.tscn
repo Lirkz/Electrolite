@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bo4ac0ndfptbh"]
+
+[ext_resource type="Script" path="res://Back.gd" id="1_pc4p4"]
+[ext_resource type="Script" path="res://in_game_menu.gd" id="1_s7yuw"]
+
+[node name="InGameMenu" type="Node2D"]
+script = ExtResource("1_s7yuw")
+
+[node name="menufromgame" type="Button" parent="."]
+offset_left = 4.0
+offset_right = 57.0
+offset_bottom = 31.0
+text = "menu
+"
+script = ExtResource("1_pc4p4")
+
+[connection signal="pressed" from="menufromgame" to="menufromgame" method="_on_pressed"]
