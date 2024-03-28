@@ -1,5 +1,6 @@
-[gd_scene load_steps=14 format=3 uid="uid://bnschpv8fasr4"]
+[gd_scene load_steps=15 format=3 uid="uid://bnschpv8fasr4"]
 
+[ext_resource type="Texture2D" uid="uid://c26lwgfw1j58q" path="res://Assets/Terrain/vent.png" id="1_0e0yy"]
 [ext_resource type="PackedScene" uid="uid://dld3udu2sipxa" path="res://character_body_2d.tscn" id="1_kukky"]
 [ext_resource type="Texture2D" uid="uid://tx0wljaqtjaa" path="res://Assets/Terrain/Terrain (16x16).png" id="2_m5qqr"]
 [ext_resource type="PackedScene" uid="uid://bcswccwxygjsa" path="res://BG.tscn" id="3_vcisa"]
@@ -634,9 +635,21 @@ sources/0 = SubResource("TileSetAtlasSource_stn0a")
 
 [node name="LVL1" type="Node2D"]
 
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 55.0
+offset_top = 481.0
+offset_right = 155.0
+offset_bottom = 581.0
+texture_normal = ExtResource("1_0e0yy")
+texture_pressed = ExtResource("1_0e0yy")
+texture_hover = ExtResource("1_0e0yy")
+texture_disabled = ExtResource("1_0e0yy")
+texture_focused = ExtResource("1_0e0yy")
+
 [node name="BG" parent="." instance=ExtResource("3_vcisa")]
 
 [node name="Text" type="Node2D" parent="."]
+visible = false
 script = ExtResource("4_ccm0v")
 
 [node name="Area2D" type="Area2D" parent="Text"]
@@ -675,4 +688,5 @@ position = Vector2(482, 154)
 [node name="InGameMenu" parent="CharacterBody2D" instance=ExtResource("6_mcgjo")]
 position = Vector2(-29.25, 17.5)
 
+[connection signal="pressed" from="TextureButton" to="CharacterBody2D/InGameMenu" method="_on_texture_button_pressed"]
 [connection signal="body_entered" from="Text/Area2D" to="Text" method="_on_area_2d_body_entered"]
