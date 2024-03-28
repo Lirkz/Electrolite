@@ -977,3 +977,4 @@ func get_inactive_update_mode() -> String:
 	return Constants.InactiveUpdateMode.keys()[Properties.inactive_update_mode].capitalize()
 
 #endregion
+
