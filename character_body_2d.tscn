@@ -359,8 +359,6 @@ scale = Vector2(4, 4)
 script = ExtResource("1_ucniq")
 metadata/hiding = false
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(4.29153e-06, 2.25)
 scale = Vector2(0.597657, 0.605469)

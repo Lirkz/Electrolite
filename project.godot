@@ -23,6 +23,10 @@ window/stretch/mode="canvas_items"
 
 project/assembly_name="Electrolite"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/phantom_camera/plugin.cfg")
+
 [input]
 
 left={

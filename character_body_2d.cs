@@ -10,6 +10,7 @@ public partial class character_body_2d : CharacterBody2D
 	public bool isLeft;
 	public bool doubleJump; //Maybe replace with some other kind of midair mobility in the future
 	
+	
 	public override void _Ready()
 	{
 	   sprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
@@ -93,3 +94,5 @@ public partial class character_body_2d : CharacterBody2D
 		
 	}
 }
+
+
